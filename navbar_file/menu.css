@@ -35,8 +35,7 @@
     margin: 0 auto;
 
 
-    li,
-    li a {
+    li, li a {
       opacity: .8;
       color: #000000;
       cursor: pointer;
@@ -56,9 +55,8 @@
         width: 100%;
       }
     }
-
     li {
-      padding-right: 36px;
+      padding-right: 24px;
 
       &::before {
         content: '';
@@ -181,7 +179,6 @@
       width: auto;
       padding: 0;
       background: none;
-      mix-blend-mode: multiply;
       object-fit: contain;
       display: inline-block;
       vertical-align: middle;
