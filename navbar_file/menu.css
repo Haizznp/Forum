@@ -191,6 +191,7 @@
   justify-content: center;
   align-items: center;
   width: 100vw;
+  gap:100px;
   box-sizing: border-box;
   .lg1, .lg2 {
     display: inline-flex;
