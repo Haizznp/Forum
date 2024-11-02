@@ -12,12 +12,14 @@
   padding: 2px 4px;
   background-color: #ffffff;
   font-family: Arial, Helvetica, sans-serif;
+
   >ul {
     justify-content: center;
   }
+
   ul,
   li {
-    position:relative;
+    position: relative;
     margin: 0 4px;
     padding: 4px 8px;
     font-size: 14px;
@@ -26,16 +28,14 @@
     transition: background-color 0.3s ease;
   }
 
-  ul li:hover:not(.register) {
-    background-color: rgb(230, 230, 230);
-  }
   ul {
     list-style: none;
     padding: 8px 0;
     margin: 0 auto;
 
 
-    li, li a {
+    li,
+    li a {
       opacity: .8;
       color: #000000;
       cursor: pointer;
@@ -55,6 +55,7 @@
         width: 100%;
       }
     }
+
     li {
       padding-right: 24px;
 
@@ -72,7 +73,9 @@
       }
     }
 
-    .link,.login,.register {
+    .link,
+    .login,
+    .register {
       &::before {
         padding-right: 0;
         display: none;
@@ -80,6 +83,7 @@
 
     }
   }
+
   >ul {
     display: flex;
     height: var(--nav-height);
@@ -149,6 +153,7 @@
       }
     }
   }
+
   .lg3 {
     display: inline-block;
     background: none;
@@ -156,59 +161,86 @@
     margin: 0;
     mix-blend-mode: multiply;
   }
-  .login {
-    background-color: rgb(227,227,227);
+
+  .auth-links {
+    display: flex;
+    gap: 16px;
+    a {
+      text-decoration: none;
+    }
+  }
+
+  .login,
+  .register {
+    display: flex;
     align-items: center;
-    .login-image {
-      height: 18px;
-      width: auto;
+    justify-content: center;
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100px;
+  }
+
+  .login {
+    background-color: rgb(227, 227, 227);
+    color: #333;
+    img.acc-icon {
+      width: 18px;
       padding: 0;
       background: none;
-      mix-blend-mode: multiply;
       object-fit: contain;
       display: inline-block;
       vertical-align: middle;
-  
     }
   }
   .register {
-    background-color: rgb(0, 0, 0);
-    align-items: center;
-    .regis-image {
-      height: 18px;
-      width: auto;
+    background-color: #333;
+    color: #ffffff;
+    img.acc-icon {
+      width: 16px;
       padding: 0;
+      margin-right: 4px;
       background: none;
       object-fit: contain;
       display: inline-block;
       vertical-align: middle;
     }
   }
+  .register:hover {
+    background-color: #000000;
+  }
+  .login:hover {
+    background-color: rgb(215, 215, 215) ;
+    color: #000000;
+  }
 }
+
 .header {
-  background-color: rgb(227,227,227);
+  background-color: rgb(227, 227, 227);
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100vw;
-  gap:100px;
+  gap: 100px;
   box-sizing: border-box;
-  .lg1, .lg2 {
+
+  .lg1,
+  .lg2 {
     display: inline-flex;
     background: none;
     mix-blend-mode: multiply;
     object-fit: contain;
   }
+
   .lg1 {
     height: 150px;
   }
+
   .lg2 {
     height: 250px;
   }
 }
-.register, .register * {
-  color: white !important;
-}
+
 body {
   margin: 0;
   padding: 0;
