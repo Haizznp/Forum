@@ -5,6 +5,7 @@
   top: 0;
   left: 0;
   width: 100%;
+  height: 100%;
   display: flex;
   align-items: center;
   justify-content: flex-start;
@@ -192,8 +193,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 100px;
   width: 100vw;
+  box-sizing: border-box;
   .lg1, .lg2 {
     display: inline-flex;
     background: none;
@@ -209,4 +210,8 @@
 }
 .register, .register * {
   color: white !important;
+}
+body {
+  margin: 0;
+  padding: 0;
 }
